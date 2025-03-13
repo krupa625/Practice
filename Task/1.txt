@@ -1,0 +1,73 @@
+d new remote repository, named remote: git remote add
+Download all changes from but don’t integrate into HEAD: git fetch
+Download changes and directly merge/integrate into HEAD: git pull
+Publish local changes on a remote: git push
+Delete a branch on the remote: git branch -dr
+Publish your tags: git push –tags
+Type 6: MERGE & REUSE
+
+Merge into your current HEAD: git merge
+Rebase your current HEAD onto git rebase
+Abort a rebase: git rebase – -abort
+Continue a rebase after resolving conflicts: git rebase – -continue
+Use your configured merge tool to solve conflicts: git mergetool
+Use your editor to manually solve conflicts and (after resolving) mark tile as resolved: git add, git rm
+Type 7: UNDO
+
+Discard all local changes in your working directory: git reset -hard HEAD
+Discard local changes in a specific file: git checkout HEAD
+Revert a commit (by producing a new commit with contrary changes): git revert
+Reset your HEAD pointer to a previous commit and discard all changes since then: git reset –hard
+Preserve all changes as unstaged changes: git reset
+Preserve uncommitted local changes: git reset – – keep
+
+Become a Full-Stack Developer and also get 90% fee refund on completing 90% course in 90 days! Take the Three 90 Challenge today.
+
+After successfully processing refunds worth over INR 5 Cr, GeeksforGeeks is back with the Three 90 challenge and this is your chance to upskill and get 90% refund. What more motivation do you need? Start the challenge right away!
+
+Advertise with us
+Next Article 
+Useful Git Commands and Basic Concepts
+Similar Reads
+Difference Between Git remote prune, Git prune and Git fetch --prune
+Git is a version control system that helps developers manage and track changes in their codebase. Among its many commands, git remote prune, git prune, and git fetch --prune are essential for maintaining a clean and organized repository. This article will explain the differences between these commands, their syntax, uses, and provide examples to il
+4 min read
+Automating some git commands with Python
+Git is a powerful version control system that developers widely use to manage their code. However, managing Git repositories can be a tedious task, especially when working with multiple branches and commits. Fortunately, Git's command-line interface can be automated using Python, making it easier to manage your code and automate common tasks. One p
+3 min read
+How to Use Git Commands in Android Studio Terminal?
+Android Studio is the official IDE (Integrated Development Environment) for Android app development and it is based on JetBrains’ IntelliJ IDEA software. Git is a Distributed Version Control System. It is used in Software Development. Git was developed by Linus Torvalds in the year 2005 to manage the development of the Linux Kernel Need of Git Git
+2 min read
+All Git Commands You Should Know
+Git is a distributed version control system (VCS) that allows multiple developers to work on a project at a time, giving the possibility of changing each other's work based on requests and authorizations. Created by Linus Torvalds in 2005 for the development of the Linux kernel, Git has since become the most widely used version control system in th
+8 min read
+How to Dry Run Git Commands?
+Git is used for version control in software development. Understanding the effects of Git commands before executing them can help prevent mistakes and ensure that your repository remains in a good state. This is where "dry running" Git commands become incredibly useful. A dry run simulates the execution of a command without making any changes, allo
+3 min read
+Useful Git Commands and Basic Concepts
+Git is a powerful version control system widely used in software development to track changes, collaborate on projects, and manage code efficiently. Understanding the basic concepts and commands in Git is important for any developer. This article will cover the fundamental concepts and some of the most Useful Git Commands and Basic Concepts to help
+5 min read
+Basic Git Commands with Examples
+Nowadays open source contribution is on the peak. It's getting so much popular among students and there are also some open-source programs and competitions to learn so much about development. Open source is a great way to learn and make a better community. There are so many organizations where one can contribute and learn. For that one have to know
+3 min read
+Simple and Concise Git Commands That Every Software Developer Should know
+As developer git is the most useful arena which is not operated directly so do we have git commands that become very crucial that one should know after having git installed in the local system. if not you must download git from here Download Git. If you need any help with the further installation process. So, Now let's start with the basic commands
+4 min read
+How to Push Folders From Local PC to GitHub using Git Commands?
+Git offers a powerful command-line interface for managing code repositories, understanding how to push folders from your local PC to GitHub repositories using Git commands can enhance your workflow and streamline the process of sharing code with collaborators or deploying projects. In this article, we'll see the step-by-step process of pushing fold
+2 min read
+Top 15 Git Commands to Become a Pro Developer [2024]
+Git is a distributed version control system and open-source software used by developers to manage different versions of source code by tracking changes in files. It is used by developers to work together on the same project from anywhere. Whether you are a professional developer or just starting your coding journey, Git is essential for becoming a
+8 min read
+course-img
+99k+ interested Geeks
+DevOps Engineering - Planning to Production
+Avail 90% Refund
+course-img
+1k+ interested Geeks
+Complete Golang Online Course | Learn Go Programming
+Avail 90% Refund
+course-img
+1k+ interested Geeks
+Learn Next.js From Scratch - Complete Course
+Avail 90% Refund
