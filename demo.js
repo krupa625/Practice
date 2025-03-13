@@ -7,3 +7,5 @@ console.log("hello");
 function name(params) {
   console.log("function");
 }
+
+const v = 10;
