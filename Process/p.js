@@ -35,7 +35,6 @@ function name12() {
 }
 
 name12();
-///// this is a function
 
 // const prom = new Promise((res, rej) => {
 //   setTimeout(res, 2000, 123);
