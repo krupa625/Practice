@@ -9,5 +9,3 @@ function name(params) {
 }
 
 const v = 10;
-
-const x = 20;
