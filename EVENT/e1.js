@@ -1,16 +1,17 @@
-const EventEmitter = require("node:events");
+/*************************************basic example************************************/
+// const EventEmitter = require("node:events");
 
-const eventemitter = new EventEmitter();
-eventemitter.on("do", () => {
-  console.log("kkk");
-});
-eventemitter.on("do", () => {
-  console.log("llll");
-});
-eventemitter.on("do", () => {
-  console.log("888");
-});
-eventemitter.emit("do");
+// const eventemitter = new EventEmitter();
+// eventemitter.on("do", () => {
+//   console.log("kkk");
+// });
+// eventemitter.on("do", () => {
+//   console.log("llll");
+// });
+// eventemitter.on("do", () => {
+//   console.log("888");
+// });
+// eventemitter.emit("do");
 
 // const abc = () => {
 //   console.log("jjj");
@@ -25,6 +26,8 @@ eventemitter.emit("do");
 // eventemitter.emit("start", "krupa");
 // eventemitter.off("start");
 // eventemitter.emit("start");
+
+/******************************classs**************************** */
 
 // const EventEmitter = require("node:events");
 // class MyEmitter extends EventEmitter {}
@@ -76,6 +79,8 @@ eventemitter.emit("do");
 
 // eventemitter.emit("error", new Error("whoops!"));
 
+/************************************** */
+
 // const { EventEmitter, errorMonitor } = require("node:events");
 
 // const myEmitter = new EventEmitter();
@@ -84,6 +89,8 @@ eventemitter.emit("do");
 // });
 // myEmitter.emit("error", new Error("whoops!"));
 // // Still throws and crashes Node.js
+
+/***************************************************** */
 
 // const EventEmitter = require("node:events");
 // const ee1 = new EventEmitter({ captureRejections: true });
@@ -145,6 +152,7 @@ eventemitter.emit("do");
 
 // ee.emit("ping");
 // ee.emit("ping");
+// ee.emit("ping");
 
 // const EventEmitter = require("node:events");
 // class MyEmitter extends EventEmitter {}
@@ -191,6 +199,7 @@ eventemitter.emit("do");
 //   }
 // }
 
+/************************************************************** */
 // const EventEmitter = require("node:events");
 // const emitter = new EventEmitter();
 // emitter.setMaxListeners(20);
@@ -237,6 +246,8 @@ eventemitter.emit("do");
 // });
 // emitter.emit("event");
 
+/********************************************************************** */
+
 // const { getEventListeners, EventEmitter } = require("node:events");
 
 // {
@@ -251,6 +262,8 @@ eventemitter.emit("do");
 //   et.addEventListener("foo", listener);
 //   console.log(getEventListeners(et, "foo")); // [ [Function: listener] ]
 // }
+
+/****************************************************************** */
 
 // const { once, EventEmitter } = require("node:events");
 
@@ -278,6 +291,8 @@ eventemitter.emit("do");
 
 // run();
 
+/*********************************************************** */
+
 // const { EventEmitter, once } = require("node:events");
 
 // const ee = new EventEmitter();
@@ -299,6 +314,7 @@ eventemitter.emit("do");
 // foo(ee, "foo", ac.signal);
 // ac.abort();
 
+/************************************************************************ */
 // const { EventEmitter, once } = require("node:events");
 
 // const myEE = new EventEmitter();
@@ -317,6 +333,8 @@ eventemitter.emit("do");
 
 // foo().then(() => console.log("done"));
 
+/******************************************************************* */
+
 // const { EventEmitter, once } = require("node:events");
 
 // const myEE = new EventEmitter();
@@ -332,3 +350,100 @@ eventemitter.emit("do");
 // });
 
 // foo().then(() => console.log("done"));
+
+/************************************************************************** */
+
+// var emitter = require("events").EventEmitter;
+
+// function LoopProcessor(num) {
+//   var e = new emitter();
+
+//   setTimeout(function () {
+//     for (var i = 1; i <= num; i++) {
+//       e.emit("BeforeProcess", i);
+
+//       console.log("Processing number:" + i);
+
+//       e.emit("AfterProcess", i);
+//     }
+//   }, 2000);
+
+//   return e;
+// }
+// var lp = LoopProcessor(3);
+
+// lp.on("BeforeProcess", function (data) {
+//   console.log("About to start the process for " + data);
+// });
+
+// lp.on("AfterProcess", function (data) {
+//   console.log("Completed processing " + data);
+// });
+
+/*************************************************************** */
+
+// const EventEmitter = require("events");
+// const emitter = new EventEmitter();
+
+// emitter.on("greet", (e) => {
+//   e.msg += "world!";
+//   console.log("kk");
+// });
+// const e = { msg: "helo" };
+// emitter.emit("greet", e);
+// console.log(e.msg);
+
+/*************************************************************************** */
+
+// const Eventemitter = require("events");
+
+// function action() {
+//   const eventemitter = new Eventemitter();
+//   setTimeout(() => {
+//     eventemitter.emit("data", { msg: "helo from events" });
+//   });
+//   return eventemitter;
+// }
+
+// const myemitter = action();
+// myemitter.on("data", (data) => {
+//   console.log(data.msg);
+// });
+
+/******************************************************** */
+
+// const Eventemitter = require("events");
+
+// class Myemitter extends Eventemitter {
+//   action() {
+//     console.log("started....");
+//     setTimeout(() => {
+//       this.emit("data", "action completed successfully...");
+//     }, 1000);
+//   }
+// }
+// const Instance = new Myemitter();
+
+// Instance.on("data", (message) => {
+//   console.log(message);
+// });
+// Instance.action();
+
+/************************************************************ */
+
+// const EventEmitter = require("events");
+
+// class Logger extends EventEmitter {
+//   action() {
+//     setTimeout(() => {
+//       this.emit("data", { message: "hello" });
+//     }, 2000);
+//   }
+// }
+
+// const logger = new Logger();
+
+// logger.on("data", (data) => {
+//   console.log(data.message);
+// });
+// logger.action();

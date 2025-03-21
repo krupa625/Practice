@@ -74,6 +74,3 @@ function basicReturn() {
 // console.log(p === asyncReturn()); // false
 asyncReturn();
 basicReturn();
-
-//dhehgdyevdvcvchdvchv hcbj
-//eyfyegdyeygdf
