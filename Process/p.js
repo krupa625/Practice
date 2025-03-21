@@ -18,23 +18,23 @@
 //   console.warn(warning.stack);   // Print the stack trace
 // });
 
-function name() {
-  const p = new Promise((res, rej) => {
-    setTimeout(res, 2000, 123);
-  });
-  return p;
-}
+// function name() {
+//   const p = new Promise((res, rej) => {
+//     setTimeout(res, 2000, 123);
+//   });
+//   return p;
+// }
 
-function name12() {
-  name().then((val) => {
-    console.log("hhh", val);
-  });
+// function name12() {
+//   name().then((val) => {
+//     console.log("hhh", val);
+//   });
 
-  // let res2 = await name();
-  // console.log(res2);
-}
+//   // let res2 = await name();
+//   // console.log(res2);
+// }
 
-name12();
+// name12();
 
 // const prom = new Promise((res, rej) => {
 //   setTimeout(res, 2000, 123);
@@ -51,3 +51,26 @@ name12();
 //   .then((data) => {
 //     console.log(data);
 //   });
+
+const p = new Promise((res, rej) => {
+  res(1);
+});
+
+async function asyncReturn() {
+  // return p;
+  p.then((val) => {
+    console.log(val);
+  });
+}
+
+function basicReturn() {
+  // return Promise.resolve(p);
+  p.then((val) => {
+    console.log(val);
+  });
+}
+
+// console.log(p === basicReturn()); // true
+// console.log(p === asyncReturn()); // false
+asyncReturn();
+basicReturn();

@@ -1,10 +1,6 @@
-const fs = require('fs');
+// const fs = require('fs');
 
+// let writer = fs.createWriteStream('test.txt')
 
-
-
-let writer = fs.createWriteStream('test.txt') 
-
-writer.write('heyeeh');
-// writer.end();
-
+// writer.write('heyeeh');
+// // writer.end();
