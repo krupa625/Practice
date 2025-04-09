@@ -1,0 +1,7 @@
+{
+  "users": ["pkripa42@gmail.com", "pkripa@gmail.com"],
+  "admins": [{ "email": "admin@gmail.com", "password": 1234 }],
+  "otps": [195314, 902584],
+  "usertokens": [],
+  "admintokens": []
+}
